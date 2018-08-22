@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp.demo.activity.DatePickerDialogActivity">
+
+    <com.bilibili.magicasakura.widgets.TintButton
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/theme_color_primary"
+        android:text="oooooooooo"/>
+
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/theme_color_primary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="颜色"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="1111111111111"/>
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+
+    <Button
+        android:id="@+id/changecolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="换肤"/>
+</LinearLayout>

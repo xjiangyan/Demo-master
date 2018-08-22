@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp.demo.activity.GsonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名:"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出生日期:"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址:"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edi_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入想保存的username"/>
+
+    <EditText
+        android:id="@+id/edi_userage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入想保存的userage"/>
+
+    <EditText
+        android:id="@+id/edi_useraddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入想保存的useraddress"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded_accent"
+        android:text="保存"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded_accent"
+        android:text="筛选"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edi_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"/>
+
+    <EditText
+        android:id="@+id/edi_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="userage"/>
+
+    <EditText
+        android:id="@+id/edi_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="useraddress"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+</LinearLayout>

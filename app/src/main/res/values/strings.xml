@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Demo</string>
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+
+    <string-array name="maintabitem_name">
+        <item>databinding</item>
+        <item>mvp</item>
+        <item>dialog</item>
+        <item>gson</item>
+        <item>custom</item>
+        <item>AVLoadingIndicatorView</item>
+        <item>gridlayout</item>
+        <item>web</item>
+        <item>datepickerdialog</item>
+        <item>checkboxs</item>
+        <item>map</item>
+        <item>expandview</item>
+        <item>qqchat</item>
+        <item>afinal</item>
+        <item>sign</item>
+        <item>cirlcemenu</item>
+        <item>pageListView</item>
+        <item>BottomBar</item>
+        <item>paintview</item>
+        <item>gifimageview</item>
+        <item>slideshow</item>
+        <item>mdactivity</item>
+        <item>mulitactivity</item>
+        <item>catchdataactivity</item>
+        <item>sevenTab</item>
+        <item>MDactivity2</item>
+        <item>anfix</item>
+        <item>database</item>
+        <item>BaseRecyclerview</item>
+        <item>DragRecyclerview</item>
+        <item>FaceDetector</item>
+    </string-array>
+    <integer-array name="maintabitem_res">
+        <item>@drawable/databinding</item>
+        <item>@drawable/mvp</item>
+        <item>@drawable/dialog</item>
+        <item>@drawable/gson</item>
+        <item>@drawable/custom</item>
+        <item>@drawable/avloadingindicatorview</item>
+        <item>@drawable/gridlayout</item>
+        <item>@drawable/web</item>
+        <item>@drawable/datepickerdialog</item>
+        <item>@drawable/checkboxs</item>
+        <item>@drawable/hh</item>
+        <item>@drawable/expandview</item>
+        <item>@drawable/qqchat</item>
+        <item>@drawable/afinal</item>
+        <item>@drawable/sign</item>
+        <item>@drawable/circlemenu</item>
+        <item>@drawable/pagelistview</item>
+        <item>@drawable/bottombar</item>
+        <item>@drawable/paintview</item>
+        <item>@drawable/gifimageview</item>
+        <item>@drawable/ss</item>
+        <item>@drawable/mdactivity</item>
+        <item>@drawable/mulitactivity</item>
+        <item>@drawable/catchdata</item>
+        <item>@drawable/seventab</item>
+        <item>@drawable/mdactivity2</item>
+        <item>@drawable/afinal</item>
+        <item>@drawable/database</item>
+        <item>@drawable/baserecyclerlist</item>
+        <item>@drawable/dragrecyclerview</item>
+        <item>@drawable/baserecyclerlist</item>
+    </integer-array>
+
+    <string-array name="maintabitem_info">
+        <item>简单DataBinding\n点击事件，数据绑定，AndPermission使用</item>
+        <item>底部弹出框BottomSheetDialog</item>
+        <item>SpringForce弹性阻尼动画</item>
+        <item>gson解析\n自定义6.0运行时权限PermissionHelper\nfinalDB简单存储</item>
+        <item>custom自定义控件</item>
+        <item>AVLoadingIndicatorView</item>
+        <item>gridlayout</item>
+        <item>web</item>
+        <item>datepickerdialog</item>
+        <item>checkboxs</item>
+        <item>map</item>
+        <item>expandview</item>
+        <item>qqchat</item>
+        <item>afinal</item>
+        <item>sign</item>
+        <item>cirlcemenu</item>
+        <item>pageListView</item>
+        <item>BottomBar</item>
+        <item>paintview</item>
+        <item>gifimageview</item>
+        <item>slideshow</item>
+        <item>mdactivity</item>
+        <item>mulitactivity</item>
+        <item>catchdataactivity</item>
+        <item>sevenTab</item>
+        <item>MDactivity2</item>
+        <item>anfix</item>
+        <item>database</item>
+        <item>BaseRecyclerview</item>
+        <item>DragRecyclerview</item>
+        <item>FaceDetector</item>
+    </string-array>
+    <!--<integer-array name="maintabitem_iv">-->
+    <!--<item>R.drawable.hh</item>-->
+    <!--</integer-array>-->
+    <string-array name="sections">
+        <item>@string/section_live</item>
+        <item>@string/section_recommend</item>
+        <item>@string/section_bangumi</item>
+        <item>@string/section_more</item>
+        <item>@string/section_focus</item>
+        <item>@string/section_discover</item>
+    </string-array>
+
+    <string name="home_tab_more">更多</string>
+    <string name="section_recommend">推荐</string>
+    <string name="section_live">直播</string>
+    <string name="section_focus">关注</string>
+    <string name="section_more">分区</string>
+    <string name="section_bangumi">番剧</string>
+    <string name="section_discover">发现</string>
+
+
+    <string name="state_network_error">网络错误</string>
+    <string name="state_loading">正在加载…</string>
+    <string name="state_not_more">没有更多数据</string>
+    <string name="state_load_error">加载失败</string>
+    <string name="state_refreshing">正在刷新</string>
+    <string name="state_load">正在加载…</string>
+
+    <string name="ic_keyboard_arrow_right">&#xe0c7;</string>
+    <string name="ic_email">&#xe087;</string>
+    <string name="ic_add">&#xe006;</string>
+    <string name="ic_close">&#xe048;</string>
+    <string name="ic_folder">&#xe09d;</string>
+    <string name="ic_keyboard_arrow_down">&#xe0c5;</string>
+
+    <string name="ic_person">&#xe105;</string>
+    <string name="ic_people">&#xe104;</string>
+</resources>

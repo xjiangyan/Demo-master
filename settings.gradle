@@ -1,0 +1,1 @@
+include ':app', ':zlAfinal', ':circlemenu', ':galleryfinal', ':library', ':marypopup', ':basequickadapter', ':banner', ':AndroidTreeView'

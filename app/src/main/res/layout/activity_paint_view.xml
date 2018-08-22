@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.hp.demo.view.SpringScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/line_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:transitionName="smalltobig"
+
+        tools:context="com.example.hp.demo.activity.PaintViewActivity">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/drawimageview"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"/>-->
+        <!--<com.example.hp.demo.view.Radar-->
+        <!--android:id="@+id/radar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+        <!--<com.example.hp.demo.view.CheckView-->
+        <!--android:id="@+id/checkview"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"/>-->
+
+        <com.example.hp.demo.view.pieChart
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择"/>
+
+            <Button
+                android:id="@+id/unchecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checked"
+                android:text="取消"/>
+
+            <Button
+                android:id="@+id/animatebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="动画"/>
+
+            <com.example.hp.demo.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=">>>>>>>>渐变色"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</com.example.hp.demo.view.SpringScrollView>

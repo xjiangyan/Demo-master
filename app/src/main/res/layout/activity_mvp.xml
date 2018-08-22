@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp.demo.activity.MVPActivity">
+
+    <EditText
+        android:id="@+id/edi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edi"
+        android:text="点击"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"/>
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="24dp">
+
+                <Button
+                    android:id="@+id/button_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="#ff669900"
+                    android:padding="16dp"
+                    android:text="STATE_EXPANDED"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/button_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="#ff33b5e5"
+                    android:padding="16dp"
+                    android:text="STATE_COLLAPSED"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/button_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="#ffcc0000"
+                    android:padding="16dp"
+                    android:text="BottomSheetDialog"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffbb33"
+            android:clipToPadding="true"
+            app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--此处用于填充BottomSheets的自定义样式-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:text="底部动作条(Bottom Sheets)特别适合有三个或者三个以上的操作需要提供给用户选择、并且不需要对操作有额外解释的情景。如果只有两个或者更少的操作，或者需要详加描述的，可以考虑使用菜单(Menu)或者对话框替代。底部动作条(Bottom Sheets)可以是列表样式的也可以是宫格样式的。宫格布局可以增加视觉的清晰度。你可以使用底部动作条(Bottom Sheets)展示和其 app 相关的操作，比如做为进入其他 app 的入口(通过 app 的 icon 进入)。"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/bottomsheet_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="bottomsheetbtn"/>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

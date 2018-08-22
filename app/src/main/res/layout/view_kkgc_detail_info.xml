@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:elevation="15dp">
+
+    <Button
+        android:id="@+id/btn_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="上一个"
+        />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btn_car"
+        android:text="下一个"
+        />
+
+
+    <!--<com.airbnb.lottie.LottieAnimationView-->
+    <!--android:id="@+id/animation_view"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="200dp"-->
+    <!--app:lottie_autoPlay="true"-->
+    <!--app:lottie_loop="true"/>-->
+
+    <!--<com.example.hp.demo.view.LoadingView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+    <com.example.hp.demo.view.SwingIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+
+    <com.zyao89.view.zloading.ZLoadingView
+        android:id="@+id/z_loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:z_color="@color/colorPrimary"
+        app:z_type="RotateCircleBuilder"/>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spinkitview"
+        style="@style/SpinKitView.CubeGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="80dp"
+        app:SpinKit_Color="@color/deepskyblue"
+        />
+
+</RelativeLayout>

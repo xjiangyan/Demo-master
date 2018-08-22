@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.easymap.android.maps.MapView
+        android:id="@+id/MapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.easymap.android.maps.MapView>
+    <include
+        android:id="@+id/head_layout"
+        layout="@layout/activity_head_layout" />
+    <!-- <ImageButton
+        android:id="@+id/ib_map_change"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/map_change1"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/> -->
+
+    <ImageView
+        android:id="@+id/reset"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="13dp"
+        android:background="@color/white"
+        android:src="@drawable/reset" />
+
+    <ImageView
+        android:id="@+id/small"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/zoomout" />
+
+    <ImageView
+        android:id="@+id/big"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_toLeftOf="@id/small"
+        android:src="@drawable/zoomin" />
+</RelativeLayout>

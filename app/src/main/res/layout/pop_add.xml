@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popwindow_style"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_renlian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/renlian"
+        android:drawablePadding="4dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="人脸识别"
+        android:textColor="@color/level_two_text"
+        android:textSize="18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="3dp"
+        android:background="@color/gray">
+    </View>
+
+    <TextView
+        android:id="@+id/tv_luren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:drawableLeft="@drawable/luren"
+        android:drawablePadding="4dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="路人识别"
+        android:textColor="@color/level_two_text"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/line_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_stuff"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="第一级"
+                android:textColor="@color/level_two_text"
+                android:textSize="13sp"
+                />
+
+
+            <View
+                android:id="@+id/lineY1"
+                android:layout_width="2px"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/titleTv"
+                android:background="@color/level_four_text"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/lineY1"
+                android:gravity="center"
+                app:ms_thickness="0dp"
+                >
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/line_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_one"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_stuff"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/tv_two"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="第二级"
+                android:textColor="@color/level_two_text"
+
+                android:textSize="13sp"/>
+
+            <View
+                android:id="@+id/lineY2"
+                android:layout_width="2px"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/titleTv"
+                android:background="@color/level_four_text"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/lineY2"
+                android:gravity="center"
+                app:ms_thickness="0dp"
+                >
+
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/line_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_two"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_stuff"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="第三级"
+                android:textColor="@color/level_two_text"
+                android:textSize="13sp"/>
+
+            <View
+                android:id="@+id/lineY3"
+                android:layout_width="2px"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/titleTv"
+                android:background="@color/level_four_text"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/lineY3"
+                android:gravity="center"
+                app:ms_thickness="0dp"
+                >
+
+            </Spinner>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

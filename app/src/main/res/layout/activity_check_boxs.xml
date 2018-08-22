@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.demo.activity.CheckBoxsActivity">
+
+    <!--<com.example.hp.demo.view.ExpandCheckBoxs-->
+    <!--android:id="@+id/ExpandCheckBoxs"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--</com.example.hp.demo.view.ExpandCheckBoxs>-->
+
+    <!--<com.example.hp.demo.view.ExpandView-->
+    <!--android:id="@+id/expandview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--</com.example.hp.demo.view.ExpandView>-->
+
+    <com.example.hp.demo.view.SpinnerView
+        android:id="@+id/spinnerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true">
+
+    </com.example.hp.demo.view.SpinnerView>
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_id"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidTreeView/AndroidTreeView.iml" filepath="$PROJECT_DIR$/AndroidTreeView/AndroidTreeView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo-master.iml" filepath="$PROJECT_DIR$/Demo-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/banner/banner.iml" filepath="$PROJECT_DIR$/banner/banner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basequickadapter/basequickadapter.iml" filepath="$PROJECT_DIR$/basequickadapter/basequickadapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circlemenu/circlemenu.iml" filepath="$PROJECT_DIR$/circlemenu/circlemenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/galleryfinal/galleryfinal.iml" filepath="$PROJECT_DIR$/galleryfinal/galleryfinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marypopup/marypopup.iml" filepath="$PROJECT_DIR$/marypopup/marypopup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zlAfinal/zlAfinal.iml" filepath="$PROJECT_DIR$/zlAfinal/zlAfinal.iml" />
+    </modules>
+  </component>
+</project>

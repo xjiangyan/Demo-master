@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.demo.activity.GifImageviewActivity">
+
+    <com.example.hp.demo.view.CircleProgressView
+        android:id="@+id/circle_progress"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        app:matProg_barColor="@color/colorPrimary"
+        app:matProg_barWidth="4dp"/>
+
+    <TextView
+        android:id="@+id/dayandnight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="日夜模式"/>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/cs_bt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:textColor="@color/cpb_white"
+        android:textSize="18sp"
+        app:cpb_colorIndicator="@color/cpb_blue"
+        app:cpb_colorIndicatorBackground="@color/white"
+        app:cpb_colorProgress="@color/white"
+        app:cpb_cornerRadius="2dp"
+        app:cpb_textComplete="上传成功"
+        app:cpb_textError="上传失败"
+        app:cpb_textIdle="测     试"/>
+    <!--  app:cpb_iconComplete="@drawable/ic_action_accept"
+      app:cpb_iconError="@drawable/ic_action_cancel"-->
+    <Button
+        android:id="@+id/open_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cs_bt"
+        android:text="图库"/>
+
+    <Button
+        android:id="@+id/open_camery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cs_bt"
+        android:layout_toRightOf="@id/open_gallery"
+        android:text="相机"/>
+
+    <com.example.hp.demo.view.HiddenView
+        android:id="@+id/hiddenview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dayandnight"
+        android:layout_marginTop="5dp">
+
+    </com.example.hp.demo.view.HiddenView>
+
+</RelativeLayout>

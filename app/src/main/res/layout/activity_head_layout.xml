@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="44dp"
+                android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:src="@drawable/emoji"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:visibility="visible"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_action_previous_item"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_workbench_button"/>
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:text="Demo"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        style="@style/Base.TextAppearance.AppCompat.Headline"/>
+
+    <ImageView
+        android:id="@+id/right_btn"
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/search"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"/>
+
+</RelativeLayout>

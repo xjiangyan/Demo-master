@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <fade>
+        <targets>
+            <!--android:excludeId 表示我们不需要该 ID 的 view 进行过渡转场。-->
+            <target android:excludeId="@android:id/statusBarBackground"/>
+            <target android:excludeId="@android:id/navigationBarBackground"/>
+        </targets>
+    </fade>
+</transitionSet>

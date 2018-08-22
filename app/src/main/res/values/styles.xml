@@ -1,0 +1,162 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullScreenDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    //安卓8.0不支持全局定义（可能较低版本可以使用）
+
+    <style name="ThemeActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="themeColorSecondary">@color/theme_color_secondary</item>
+
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:textColorPrimary">@color/text_primary_color</item>
+
+        <!--<item name="android:windowAnimationStyle">@style/AnimationActivity</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!-- 开启过渡效果 -->
+        <item name="android:windowContentTransitions">true</item>
+        <!--A退出的动画和B进入的动画同步进行-->
+        <!--<item name="android:windowAllowEnterTransitionOverlap">true</item>-->
+        <!--B返回的动画和A重新进入的动画同步进行-->
+        <!--<item name="android:windowAllowReturnTransitionOverlap">true</item>-->
+
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        //同一样需要注意anim持续时间和alpha值的设置
+        //这四个属性容易不好记，按照顺序我们简单的记忆口诀是“新进、旧出；旧进、新出”；
+        //不用担心顺序搞混的问题，android studio重新排版的顺序就是按照这个顺序来的。
+        <item name="android:activityOpenEnterAnimation">@anim/next_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/pre_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/pre_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/next_out</item>
+    </style>
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/indigo</item>
+        <item name="itemBackground">@drawable/bottomnavigation_background</item>
+        <item name="itemIconTint">@color/colorPrimary</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="paddingStart">15dp</item>
+        <item name="paddingEnd">15dp</item>
+    </style>
+
+
+    <style name="AppTheme.AppCompat.Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:maxWidth">1080px</item>
+    </style>
+
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="TreeNodeStyleCustom">
+        <item name="android:paddingLeft">20dp</item>
+        <!--<item name="android:showDividers">middle</item>-->
+        <!--<item name="android:divider">@android:drawable/divider_horizontal_bright</item>-->
+    </style>
+
+    <style name="TreeNodeStyleDivided">
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:divider">@android:drawable/divider_horizontal_bright</item>
+    </style>
+
+    <style name="textview_style">
+
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">41dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/theme_color_primary</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <style name="App.Theme.Dialog.Alert" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/black_alpha_240</item>
+    </style>
+
+
+    <!--版本更新对话框-->
+    <style name="Theme.Dialog.NoTitle.Translucent" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+        <item name="windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+    </style>
+
+
+    <!--指定activity动画-->
+    <style name="ActivityAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+    <!--********************************shapeloadingview*********************-->
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <!--************************    弹窗********************    -->
+    <style name="pop_add">
+        <item name="android:windowEnterAnimation">@anim/pop_add_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_add_hide</item>
+    </style>
+
+
+</resources>
